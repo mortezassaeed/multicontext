@@ -1,0 +1,7 @@
+﻿ef migrations add "init-foo" --project ..\DataAccess -o ..\DataAccess\PromoveMigratoins -c PromoveDbContext
+ef migrations add "init-foo" --project ..\DataAccess -o ..\DataAccess\OfferMangerDbContext -c OfferMangerDbContext
+
+
+
+dotnet ef database update --project ../DAL -c PromoveDbContext
+dotnet ef database update --project ../DAL -c OfferMangerDbContext
